@@ -6,6 +6,7 @@
     content="width=device-width,
              initial-scale=1.0,
              user-scalable=yes" />
+
   <title>生物室</title>
   <link rel="stylesheet" href="math.css">
   <script type="text/javascript" id="MathJax-script" async
@@ -91,4 +92,15 @@
     </ul>
     </div>
 </body>
+<script language="JavaScript">
+    function rCheck()
+    {
+        if (window.name != "xyz")
+        {
+            alert("リロードしました");
+            location.reload();
+            window.name = "xyz";
+        }
+    }
+</script>
 </html>
