@@ -50,6 +50,7 @@ body {
 .box .red   {background: #ff0000}
 .box .orange{background: #ff7f2a}
 .box .blue  {background: #00aad4}
+.box .purple{background: #b380ff}
 
 .fixed_btn{
   position: fixed;
@@ -96,5 +97,3 @@ table.score {
   border-collapse: collapse;
   text-align: center;
 }
-
-
