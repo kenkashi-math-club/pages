@@ -97,3 +97,7 @@ table.score {
   border-collapse: collapse;
   text-align: center;
 }
+
+.item {
+  text-align: left;
+}
