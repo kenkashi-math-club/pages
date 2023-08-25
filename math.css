@@ -101,3 +101,10 @@ table.score {
 .item {
   text-align: left;
 }
+
+p .number {
+  border-radius: 1em;
+  border: 0.1em solid #2ca089;
+  padding-right: 0.3em;
+  padding-left: 0.3em;
+}
