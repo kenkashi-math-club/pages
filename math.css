@@ -118,3 +118,11 @@ p .number {
   padding-right: 0.3em;
   padding-left: 0.3em;
 }
+
+.int table{
+  text-align: left;
+}
+
+.int .i-box {
+  border: 1px solid #000;
+}
