@@ -117,6 +117,7 @@ p .number {
 
 .int table{
   text-align: left;
+  overflow-x: scroll;
 }
 
 .int .i-box {
@@ -133,6 +134,7 @@ p .number {
   background-color: #FFF;
   border-radius: 20pt;
   padding: 5pt;
+  margin: 20pt;
 }
 
 .m-box .box-title{
@@ -157,4 +159,8 @@ p .number {
 
 .number_circle{
   font-size: 4vw;
+}
+
+.QR_DENSO {
+  color: #FFF;
 }
