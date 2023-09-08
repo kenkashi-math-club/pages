@@ -126,3 +126,35 @@ p .number {
 .int .i-box {
   border: 1px solid #000;
 }
+
+.main {
+  text-align: left;
+  font-size: 3vw;
+  background-color: #000;
+}
+
+.m-box {
+  background-color: #FFF;
+  border-radius: 20pt;
+  padding: 5pt;
+}
+
+.m-box .box-title{
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  font-family: sans-serif;
+  background-color: #f00;
+  border-top-left-radius: 20pt;
+  border-top-right-radius: 20pt;
+  margin: -5pt;
+}
+
+.m-box table, td, tr, th{
+  border: #000 solid 2px;
+  border-collapse: collapse;
+  margin: 20px;
+}
+.m-box .t-head{
+  text-align: center;
+}
