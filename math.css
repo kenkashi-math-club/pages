@@ -185,4 +185,7 @@ p .number {
 input[type="checkbox"]:checked + p{
   display:block;
 }
+.cbox{
+  transform: scale(2);
+}
 
