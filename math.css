@@ -176,8 +176,6 @@ p .number {
   margin-bottom: 2vw;
 }
 
-
-
 .hint p{
   display:none;
 }
@@ -188,4 +186,3 @@ input[type="checkbox"]:checked + p{
 .cbox{
   transform: scale(2);
 }
-
