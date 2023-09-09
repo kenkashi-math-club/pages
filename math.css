@@ -164,3 +164,25 @@ p .number {
 .QR_DENSO {
   color: #FFF;
 }
+
+.link {
+  text-align:center;
+  font-size: 6vw;
+}
+
+.link button{
+  width: 40vw;
+  margin:0 auto;
+  margin-bottom: 2vw;
+}
+
+
+
+.hint p{
+  display:none;
+}
+
+input[type="checkbox"]:checked + p{
+  display:block;
+}
+
