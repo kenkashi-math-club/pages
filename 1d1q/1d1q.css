@@ -1,39 +1,27 @@
-header {
+
+ header {
   margin: 0;
   padding: 0;
   background-color: #4f4f4f;
   color: #fff;
-  align-items: center;
   text-align: center;
   height: auto;
 }
 
-.header1 {
-  display: none;
-  height: 62pt;
- }
-.headerimg1{
-  height: 100%;
-}
- 
- /* 画面がスマホサイズの時、スマホ版ヘッダーを表示 */
- .header2 {
-  display: block;
-  width: 100%;
- }
- .headerimg2{
+.headerimg {
   width: 90%;
- }
-
- @media screen and (min-width: 480px) {
-
-  /* 画面がPCサイズの時、PC版ヘッダーを表示 */
-  .header1 {
-   display: block;
+}
+ @media screen and (min-width: 481px) {
+	.headerimg {
+    width: 70%;
   }
- 
-  /* 画面がPCサイズの時、スマホ版ヘッダーを消す */
-  .header2 {
-   display: none;
+  .header {
+    height: auto;
   }
- }
+}
+@media screen and (min-width: 960px) {
+	.headerimg {
+    height: 70pt;
+    width: auto;
+  }
+}
