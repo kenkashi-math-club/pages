@@ -5,13 +5,13 @@
   background-color: #4f4f4f;
   color: #fff;
   text-align: center;
-  height: auto;
 }
 
-.headerimg {
-  width: 90%;
-}
- @media screen and (min-width: 481px) {
+
+  .headerimg {
+    width: 90%;
+  }
+@media screen and (min-width: 600px) {
 	.headerimg {
     width: 70%;
   }
@@ -19,7 +19,7 @@
     height: auto;
   }
 }
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 834px) {
 	.headerimg {
     height: 70pt;
     width: auto;
