@@ -1,0 +1,71 @@
+\documentclass[a5paper]{ltjsarticle}
+\usepackage{enumerate}
+\usepackage{amsmath,amssymb}
+\usepackage{qrcode}
+\usepackage{graphicx}
+\usepackage[%
+nohead,left=5mm,right=5mm,top=5mm,bottom=5mm]{geometry}
+\topskip0mm
+\pagestyle{empty}
+\qrset{height=15mm}
+\newcommand{\page}{index.html}
+\newcommand{\Qheight}{25mm}
+\newcommand{\QSheets}[2][6]{%
+ \renewcommand{\page}{answers/#2.html}
+  \renewcommand{\Qheight}{27mm}
+  \if #15%
+    \renewcommand{\Qheight}{34mm}%
+    \else%
+    \if #14%
+      \renewcommand{\Qheight}{44mm}%
+      \else%
+      \if #13%
+        \renewcommand{\Qheight}{61mm}%
+        \else%
+        \if #12%
+          \renewcommand{\Qheight}{96mm}%
+          \else%
+          \if #11%
+            \renewcommand{\Qheight}{194mm}%
+          \fi
+        \fi
+      \fi
+    \fi
+  \fi
+
+  \begin{minipage}[c][\Qheight]{134.5mm}
+    \begin{minipage}[][\Qheight][t]{108mm}
+      \begin{description}
+        \item[\fbox{\bfseries#2}] \input{./questions/#2.txt} 
+      \end{description}
+    \end{minipage}
+    \begin{minipage}[]{18mm}
+      \setlength\lineskiplimit{0pt}
+      \setlength\normallineskiplimit{0pt}
+      \begin{center}
+        \vspace*{-2mm}
+        解答\\[2mm]
+        \qrcode{https://kenkashi-math-club.github.io/pages/1d1q/\page}\\[2mm]
+        \includegraphics[width=15mm]{./logo.pdf}
+      \end{center}
+    \end{minipage}
+  \end{minipage}\\
+  \dotfill%
+}
+
+\begin{document}
+\noindent
+\QSheets[6]{A2}\\
+\QSheets[6]{A2}\\
+\QSheets[6]{A2}\\
+\QSheets[6]{A2}\\
+\QSheets[6]{A2}\\
+\QSheets[6]{A2}\\
+\QSheets[6]{B1}\\
+\QSheets[6]{B1}\\
+\QSheets[6]{B1}\\
+\QSheets[6]{B1}\\
+\QSheets[6]{B1}\\
+\QSheets[6]{B1}\\
+
+\end{document}

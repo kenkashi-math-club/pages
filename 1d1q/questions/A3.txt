@@ -1,0 +1,2 @@
+次の定積分を求めよ．
+\[\int_{-x}^x (ax^3+bx^2+cx+d)dx \qquad \text{（$a,b,c,d$は定数，$a\neq 0$）}\]

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <mata name="viewport" content="width=device-width"/>
+    <title>今日の1問解答・解説--B1</title>
+    <link rel="stylesheet" href="../1d1q.css">
+    <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<header>
+  <img class="headerimg" src="../title.svg">
+</header>
+<body>
+  <div class="text">
+  This is the β version, and this project is not completed yet. 
+  So I would appreciate it if you could give me feedback.
+  <h1>問B1&ensp;解答 &emsp;answer</h1>
+  <h2>解法</h2>
+  \(f'(x)=3x^2,\quad g(x)=3x+2\)なので，求める面積は図の斜線部ようになる．<br>
+  <img src="./figB1.svg" width="300px" alt="" align="right">
+  よって求める面積は，\( (f(x) \text{と} g(x) で囲まれた領域…①) \) \( -(f'(x) \text{と} g(x) \text{で囲まれた領域…②}) \)
+  となる．
+  <h3>①の面積</h3>
+  \( f(x) \)と\( g(x) \)の交点の\(x\)座標は\(-1,2\)であるから，
+  \begin{align}
+    S_1 &= -\int_{-1}^2 (x^3-3x-2)dx \\
+    &= -\int_{-1}^2 {(x+1)}^2 (x-2)dx \\
+    &= \frac{1}{12} \{2-(-1)\}^4\\
+    &= \frac{81}{12}
+  \end{align}
+  <h3>②の面積</h3>
+  \( f'(x) \)と\( g(x) \)の交点の\(x\)座標は\(\displaystyle \frac{3\pm\sqrt{33}}{6} \)であるから，
+  \(\displaystyle \alpha=\frac{3-\sqrt{33}}{6},\: \beta=\frac{3+\sqrt{33}}{6}\) とすると
+  \begin{align}
+    S_2 &= -\int_\alpha^\beta (x-\alpha)(x-\beta)dx\\
+    &= \frac{1}{6}\left\{ \frac{3+\sqrt{33}}{6} - \left( \frac{3-\sqrt{33}}{6}\right) \right\}^3\\
+    &= \frac{1}{6}\left( \frac{\sqrt{33}}{3} \right)^3\\
+    &= \frac{1}{6}\cdot \frac{33\sqrt{33}}{27}\\
+    &= \frac{11\sqrt{33}}{54}
+  \end{align}
+  よって求める面積は，
+  \begin{align}
+    S=& \frac{81}{12}-\frac{11\sqrt{33}}{54}\\
+    =& \mathbf{\frac{729-22\sqrt{33}}{108}}
+  \end{align}
+  </div>
+</body>
+</html>

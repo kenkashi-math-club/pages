@@ -1,0 +1,2 @@
+次の定積分を求めよ．
+\[\int_{-x}^{2x} (ax^2+bx+c)dx \qquad \text{（$a,b,c$は定数，$a\neq 0$）}\]
