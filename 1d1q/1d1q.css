@@ -1,10 +1,7 @@
-
-
 .text {
   padding: 2% 5% ;
   font-size: 3vw;
 }
- 
  
 header {
   width: 100%;
@@ -14,7 +11,6 @@ header {
   color: #fff;
   text-align: center;
 }
-
 
   .headerimg {
     width: 90%;
@@ -32,4 +28,39 @@ header {
     height: 70pt;
     width: auto;
   }
+}
+
+footer {
+  background-color: #4f4f4f;
+  text-align: center;
+}
+footer ul{
+  height: 200px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  list-style: none;
+  margin: auto;
+}
+
+footer p {
+  font-size: 2.5vw;
+  color: #fff;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 2vw;
+}
+
+.class td{
+  border: solid 1px;
+  padding: 0px 20px;
+}
+.class th{
+  border: solid 3px;
+  padding: 0px 10px
+}
+table.class {
+  border: solid 3px;
+  border-collapse: collapse;
+  text-align: center;
 }
