@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <mata name="viewport" content="width=device-width"/>
-    <title>今日の1問解答・解説--A2</title>
+    <title>今日の1問解答・解説--B2</title>
     <link rel="stylesheet" href="../1d1q.css">
     <script type="text/javascript" id="MathJax-script" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
@@ -15,17 +15,24 @@
   <div class="text">
   This is the β version, and this project is not completed yet. 
   So I would appreciate it if you could give me feedback.
-  <h1>問A2&ensp;解答 &emsp;answer</h1>
+  <h1>問B2&ensp;解答 &emsp;answer</h1>
   <h2>解法</h2>
-  \(\displaystyle \int_\alpha^\beta f(x)dx +\int_\beta^\gamma f(x)dx = \int_\alpha^\gamma f(x)dx\)，
-  \(\displaystyle \int_{-a}^a x^{2n}dx = 2\int_0^a x^{2n}dx,\quad \int_{-a}^a x^{2n-1} dx =0\: \text{（\(n\)は整数）}\) を利用すると，
+  交点を\( \alpha,\beta \)とすると，面積は
   \begin{align}
-    &\int_{-4}^{-1} (2x^3-4x-5)dx + \int_{-1}^4 (2x^3-4x-5)dx\\
-    =&\int_{-4}^{4} (2x^3-4x-5)dx\\
-    =&2\int_0^4 -5dx\\
-    =&2\left[ -5x \right]_0^4\\
-    =&\mathbf{-40}
+    &\int_\alpha^\beta (ax+1-x^2-2x+7)dx\\
+    =&\int_\alpha^\beta (-x^2+(a-2)x+8)dx\\
+    =&\frac{1}{6}(\beta-\alpha)^3
   \end{align}
+  ここで，\( \alpha,\beta \)の\(x\)座標を求めると,
+  \[ \frac{-a+2\pm\sqrt{a^2-4a+36}}{2} \]
+  よって，\( \beta-\alpha =\sqrt{a^2-4a+36}\) なので，面積は
+  \[ \frac{1}{6}\left( \sqrt{a^2-4a+36} \right)^3 \]
+  ここでの\( \sqrt{a^2-4a+36} \)の最小値は\( \sqrt{(a-2)^2 +32} \)なので，
+  \( a=2 \)のとき，最小値は\( \sqrt{32}=4\sqrt{2} \)となる．
+  よって，面積は，
+  \[ \frac{1}{6}\left( 4\sqrt{2} \right)^3 =\mathbf{\frac{64\sqrt{2}}{3}}\]
+
+
   </div>
 
   <footer>

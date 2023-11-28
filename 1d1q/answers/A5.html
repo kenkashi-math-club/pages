@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <mata name="viewport" content="width=device-width"/>
-    <title>今日の1問解答・解説--A2</title>
+    <title>今日の1問解答・解説--A5</title>
     <link rel="stylesheet" href="../1d1q.css">
     <script type="text/javascript" id="MathJax-script" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
@@ -15,16 +15,21 @@
   <div class="text">
   This is the β version, and this project is not completed yet. 
   So I would appreciate it if you could give me feedback.
-  <h1>問A2&ensp;解答 &emsp;answer</h1>
+  <h1>問A5&ensp;解答 &emsp;answer</h1>
   <h2>解法</h2>
-  \(\displaystyle \int_\alpha^\beta f(x)dx +\int_\beta^\gamma f(x)dx = \int_\alpha^\gamma f(x)dx\)，
-  \(\displaystyle \int_{-a}^a x^{2n}dx = 2\int_0^a x^{2n}dx,\quad \int_{-a}^a x^{2n-1} dx =0\: \text{（\(n\)は整数）}\) を利用すると，
+  確率変数\(X\)は二項分布\(B(n,p)\)に従うので，平均は\(np\), 分散は\(np(1-p)\)と書ける．
+  標準偏差が\(\frac{\sqrt{30}}{3}\)なので，分散は\(\frac{10}{3}\).
+  \(\displaystyle np=5,\quad np(1-p)=\frac{10}{3}\)より，\( \displaystyle n=\frac{5}{p}\)
   \begin{align}
-    &\int_{-4}^{-1} (2x^3-4x-5)dx + \int_{-1}^4 (2x^3-4x-5)dx\\
-    =&\int_{-4}^{4} (2x^3-4x-5)dx\\
-    =&2\int_0^4 -5dx\\
-    =&2\left[ -5x \right]_0^4\\
-    =&\mathbf{-40}
+    np(1-p)&=\frac{10}{3}\\
+    5-5p   &=\frac{10}{3}\\
+    5p     &=5-\frac{10}{3}\\
+    p      &=1-\frac{2}{3}\\
+    p      &=\mathbf{\frac{1}{3}}
+  \end{align}
+  \begin{align}
+    n&=\frac{5}{\frac{1}{3}}\\
+    n&=\mathbf{15}
   \end{align}
   </div>
 
